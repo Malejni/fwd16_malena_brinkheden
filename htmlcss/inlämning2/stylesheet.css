@@ -1,0 +1,113 @@
+body {
+	background: url(clouds.jpg) blue;
+	background-size: cover;
+}
+
+#container {
+	width: 960px;
+	font-family: helvetica;
+}
+
+#header {
+	height: 150px;
+	padding: 1px;
+	text-align: center;
+}
+
+#logo {
+	float: left;
+}
+
+.navbtn {
+    background-color: red;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.leftnav {
+	float: center;  
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-content a:hover {
+	background-color: red;
+	color: orange;
+}
+
+
+
+.leftnav:hover .menu-content {
+    display: block;
+}
+
+.leftnav:hover .navbtn {
+    background-color: black;
+}
+
+#content {
+	width: 781px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #100;
+	float: right;
+}
+
+p {
+	font-size: 15px;
+}
+
+h1, h2, h3 {
+	color: orange;
+}
+
+img {
+	width: 400px;
+}
+
+img:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=100);
+}
+
+#sidebar {
+	width: 150px;
+	height: 1131px;
+	border: 1px solid #100;
+	float: left;
+	overflow: auto;
+}
+
+#aside-article {
+	padding-left: 5px;
+	padding-right: 5px;
+	border-bottom: 1px solid #100;
+}
+
+#footer {
+	height: 50px;
+	text-align: center;
+	clear: both;
+	border: 1px solid #000;
+}
