@@ -1,0 +1,161 @@
+body {
+    background: url(scotland.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* For landingpage */
+.welcome {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 10%;
+}
+
+a.welcome {
+    color: white;
+    font-family: helvetica;
+    font-size: 80%;
+}
+
+/* Landingpage end */
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-wrapper {
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    font-family: helvetica;
+    display: flex;
+    padding: 1%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+nav.navcontainer {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.navbtn {
+    background-color: initial;
+    color: white;
+    font-size: 150%;
+    border: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.menu-content {
+    display: none;
+    text-align: center;
+    width: 105%;
+    height: 50%;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.menu-content a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.menu-content a:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.navcontainer:hover .menu-content {
+    display: block;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.navcontainer:hover .navbtn {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.socialmedia {
+}
+
+
+
+/* For flexcards */
+
+#wrapper {
+    padding: 1%;
+}
+
+.card-wrap {
+    border:1px solid white;
+    background: seagreen;
+    opacity: 0.5;
+    font-family: helvetica;
+    margin: 1%;
+}
+
+span.title {
+    text-align: center;
+    color: white;
+    padding: 1%;
+}
+
+.header{
+    color: white;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.type {
+
+}
+
+.author {
+
+}
+
+.content-wrap {
+    align-content: center;
+    padding: 1%;
+}
+
+img {
+    padding: 1%;
+}
+
+p {
+    color: white;
+    padding: 1%;
+}
+
+.cardfooter {
+    display: inline-block;
+    background-color: gold;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 1%;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For desktop: */
+
+}
+
+@media all and(min-width: 500px;) {
+    .felx-nav li { flex: 11 25%; }
+}
