@@ -1,0 +1,41 @@
+$breakpoints: (
+  'small':  ( min-width:  30.000em ),
+  'medium': ( min-width:  48.000em ),
+  'large':  ( min-width: 62.000em ),
+  'wide':  ( min-width: 75.000em )
+) !default;
+
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+
+
+$site-colors: (
+  navbar:white,
+  flexcard:white,
+  header:white,
+  cardfooter:white
+);
+
+$element-colors:(
+  h1:white,
+  p:white,
+  a:white
+);
+
+@each $site , $color in $site-colors{
+  .layout-#{$site} {
+    background: $color;
+  }
+}
+
+@each $element , $color in $element-colors{
+  .color-#{$element} {
+    color: $color;
+  }
+}

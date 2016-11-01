@@ -1,0 +1,212 @@
+body {
+    background: url(scotland.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-attachment: fixed;
+    font-family: helvetica;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/* For landingpage */
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:100vh;
+    color: white;
+    text-decoration: none;
+}
+
+a.welcome {
+    color: white;
+    font-family: helvetica;
+    font-size: 80%;
+}
+
+/* Landingpage end */
+
+
+/* Index page */
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.fa-bars {
+    color: white;
+    margin: 3px;
+}
+
+#nav-wrapper {
+    display: none;
+    flex-flow: column;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.2);
+}
+
+nav {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    
+}
+
+#nav-toggle {
+    display: none;
+}
+
+#nav-toggle:checked ~ #nav-wrapper {
+    display: block;
+}
+
+#nav-toggle:checked ~ #nav-wrapper .fa-bars{
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+    justify-content: space-around;
+    text-align: center;
+}
+
+nav ul a {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+nav li {
+    display: flex;
+    justify-content: space-around;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    min-width: 100%;
+    list-style: none;
+    }
+
+/* For flexcards */
+.container {
+    display: flex;
+    width: 100%;
+}
+
+
+
+.flexwrapper {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 25%;
+    height: 0 auto;
+}
+
+.flexcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:auto;
+    max-width: 50%;
+    border:1px solid white;
+    background: seagreen;
+    opacity: 0.5;
+    font-family: helvetica;
+    margin:0 auto;
+    margin-top: 5px;
+}
+
+span.title {
+    text-align: left;
+    color: white;
+    padding-left: 1%;
+}
+
+.header{
+    color: white;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.type {
+    text-align: left;
+}
+
+.author {
+    text-align: right;
+}
+
+.content-wrap {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 1%;
+}
+
+img {
+    padding: 1%;
+}
+
+p {
+    color: white;
+    padding: 1%;
+}
+
+.cardfooter {
+    display: flex;
+    background-color: gold;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    padding: 1%;
+    margin-top: 5px;
+    width: 100%;
+}
+
+
+.flexcard .lastchild {
+    display: flex;
+    width:  98%;
+}
+
+
+@media only screen and (min-width: 600px) {
+/* For tablets: */
+    label {
+        display: none;
+    }
+
+    .nav-wrapper {
+        display: block!important;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+/* For desktop: */
+
+
+
+
+
+
+
+

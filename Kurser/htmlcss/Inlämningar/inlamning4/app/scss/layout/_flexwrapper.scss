@@ -1,0 +1,25 @@
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.wrapper {
+	width: 80%;
+	display: flex;
+	flex-flow: column;
+}
+
+@include respond-to('medium') {
+    .wrapper {
+    flex-wrap: wrap;
+    flex-flow: row;
+  }  
+}
+
+@include respond-to('large') {
+    .wrapper {
+    flex-wrap:wrap;
+    flex-flow: row;
+    }
+}

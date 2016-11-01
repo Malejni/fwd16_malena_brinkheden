@@ -1,0 +1,32 @@
+/* For landingpage */
+body {
+    background: url(../images/scotland.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-attachment: fixed;
+    font-family: helvetica;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:100vh;
+    color: white;
+    text-decoration: none;
+}
+
+a.welcome {
+    color: white;
+    font-family: helvetica;
+    font-size: 80%;
+}
