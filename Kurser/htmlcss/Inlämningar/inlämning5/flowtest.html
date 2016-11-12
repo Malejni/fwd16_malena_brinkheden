@@ -14,69 +14,75 @@
 
 <body>
   <div class="hero">
-      <div class="w-container">
-        <a class="logo w-nav-brand" href="#">
-          <div>Malejni</div>
-        </a>
-        <nav class="nav-menu w-nav-menu" role="navigation">             
-        <div class="menu-button w-nav-button">
-          <div class="w-icon-nav-menu"><i class="fa fa-bars"></i></div>
-        </div>
-                <ul class="navbar">	
-							<li><a href="">Home</a></li>
-							<li><a href="">About</a></li>
-							<li><a href="">Projects</a>
-								<ul>
-									<li><a href="#">Sub sub item 1</a></li>
-									<li><a href="#">Next level items</a>
-										<ul>
-                      						<li><a href="#">Multi level f*er</a>
-											<ul>
-											<ul>
-                      						<ul>
-                      						</ul>
-                      					</li>
-									</ul>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li><a href="#">Item a little longer</a></li>
-				</ul>
-			</li>
-            <li><a href="">Contact</a></li>
-			<li><a class="social" href="#"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-            </ul>
-        </nav>
-
-
+      <div class="container">
+        <a class="logo" href="#">malejni</a>
+<nav>
+  
+  <label for="drop" class="toggle"><i class="fa fa-bars"></i></label>
+  <input type="checkbox" id="drop" />
+  <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li> 
+      <!-- First Tier Drop Down -->
+      <label for="drop-1" class="toggle">Service +</label>
+      <a href="#">Service</a>
+      <input type="checkbox" id="drop-1"/>
+      <ul>
+        <li><a href="#">Service 1</a></li>
+        <li><a href="#">Service 2</a></li>
+        <li><a href="#">Service 3</a></li>
+      </ul>
+    </li>
+    <li> 
+      
+      <!-- First Tier Drop Down -->
+      <label for="drop-2" class="toggle">Portfolio + </label>
+      <a href="#">Portfolio</a>
+      <input type="checkbox" id="drop-2"/>
+      <ul>
+        <li><a href="#">Portfolio 1</a></li>
+        <li><a href="#">Portfolio 2</a></li>
+        <li> 
+          
+          <!-- Second Tier Drop Down -->
+          <label for="drop-3" class="toggle"><a href="#">Work with</a></label>
+					<input type="checkbox" id="drop-3"/>
+          <ul>
+            <li><a href="#">HTML/CSS</a></li>
+            <li><a href="#">jQuery</a></li>
+            <li><a href="#">Python</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</nav>
       </div>
     </div>
-    <div class="heading-wrapper w-container">
+    <div class="heading-wrapper">
       <h1 class="main-heading">Learning to flex is tough</h1><a class="button w-button" href="#">See more</a>
     </div>
   </div>
-  <div class="section">
-    <div class="w-container">
+  <footer class="section">
+    <div class="container">
       <h3 class="section-title">Latest Work</h3>
 
-<div id="flexwrapper">
+<div class="flexwrapper">
 
 			<div class="flexcard">
 				<span class="title">
 					<h2>Project</h2>
 				</span>
-
 				<div class="content-wrap">
 					<img src="ocean2.jpg">
 					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
 					</p>
 				</div>
 				<footer>
-				<button class="cardfooter">Read more</button>
+				<button class="cardfooter">See more</button>
 				</footer>
 			</div>
 
@@ -84,17 +90,14 @@
 				<span class="title">
 					<h2>Project</h2>
 				</span>
-
 				<div class="content-wrap">
 					<img src="ocean2.jpg">
 					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
 					</p>
 				</div>
 				<footer>
-				<button class="cardfooter">Read more</button>
+				<button class="cardfooter">See more</button>
 				</footer>
 			</div>
 
@@ -102,17 +105,14 @@
 				<span class="title">
 					<h2>Project</h2>
 				</span>
-
 				<div class="content-wrap">
 					<img src="ocean2.jpg">
 					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
 					</p>
 				</div>
 				<footer>
-				<button class="cardfooter">Read more</button>
+				<button class="cardfooter">See more</button>
 				</footer>
 			</div>
 
@@ -120,50 +120,150 @@
 				<span class="title">
 					<h2>Project</h2>
 				</span>
-
 				<div class="content-wrap">
 					<img src="ocean2.jpg">
 					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
 					</p>
 				</div>
 				<footer>
-				<button class="cardfooter">Read more</button>
+				<button class="cardfooter">See more</button>
 				</footer>
 			</div>
 
+			<div class="flexcard-big">
+				<span class="title">
+					<h2>Project</h2>
+				</span>
+				<div class="content-wrap">
+					<img src="ocean2.jpg">
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+					</p>
+				</div>
+				<footer>
+				<button class="cardfooter">See more</button>
+				</footer>
+			</div>
 			<div class="flexcard">
 				<span class="title">
 					<h2>Project</h2>
 				</span>
-			
-
 				<div class="content-wrap">
 					<img src="ocean2.jpg">
 					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
 					</p>
 				</div>
 				<footer>
-				<button class="cardfooter">Read more</button>
+				<button class="cardfooter">See more</button>
 				</footer>
 			</div>
-
+			<div class="flexcard">
+				<span class="title">
+					<h2>Project</h2>
+				</span>
+				<div class="content-wrap">
+					<img src="ocean2.jpg">
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+					</p>
+				</div>
+				<footer>
+				<button class="cardfooter">See more</button>
+				</footer>
+			</div>
+						<div class="flexcard">
+				<span class="title">
+					<h2>Project</h2>
+				</span>
+				<div class="content-wrap">
+					<img src="ocean2.jpg">
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+					</p>
+				</div>
+				<footer>
+				<button class="cardfooter">See more</button>
+				</footer>
+			</div>
+						<div class="flexcard">
+				<span class="title">
+					<h2>Project</h2>
+				</span>
+				<div class="content-wrap">
+					<img src="ocean2.jpg">
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+					</p>
+				</div>
+				<footer>
+				<button class="cardfooter">See more</button>
+				</footer>
+			</div>
+			<div class="flexcard-big">
+				<span class="title">
+					<h2>Project</h2>
+				</span>
+				<div class="content-wrap">
+					<img src="ocean2.jpg">
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+					</p>
+				</div>
+				<footer>
+				<button class="cardfooter">See more</button>
+				</footer>
+			</div>			
 
 	</div>
 
 
     </div>
   </div>
-  <div class="footer">
-    <div class="w-container">
-      <div class="footer-logo">Malejni</div>
-    </div>
-  </div>
+  <footer class="documentFooter">
+			<div class="footer-link">
+				<i class="fa fa-github fa-2x"></i>
+				<i class="fa fa-linkedin fa-2x"></i>
+    	</div>
+			<div class="footerwrapper">
+				<div class="flexcard">
+					<span class="title">
+						<h2>Address</h2>
+					</span>
+						<div class="content-wrap">
+							<p>
+								Baskemöllegatan 8 D
+								21440 Malmö
+							</p>
+						</div>
+				</div>	
+				<div class="flexcard">
+					<span class="title">
+						<h2>Email</h2>
+					</span>
+						<div class="content-wrap">
+							<p>
+								malena.brinkheden@student.kyh.se
+							</p>
+						</div>
+				</div>
+				<div class="flexcard">
+					<span class="title">
+						<h2>Phone</h2>
+					</span>
+						<div class="content-wrap">
+							<p>
+								000-000
+							</p>
+						</div>
+				</div>
+			</div>
+
+
+      <div class="footer-logo">malejniweb 2016 <i class="fa fa-copyright"></i></div>
+    
+  </footer>
 </body>
 
 </html>
