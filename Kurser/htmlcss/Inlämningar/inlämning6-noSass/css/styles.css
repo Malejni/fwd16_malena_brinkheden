@@ -1,0 +1,295 @@
+body {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+/* mini nav reset */
+.nav,
+.nav a,
+.nav form,
+.nav input,
+.nav li,
+.nav ul {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.nav a {
+  text-decoration: none;
+}
+.nav li {
+  list-style: none;
+}
+
+/* menu container */
+.nav-wrapper {
+  display: flex;
+}
+
+.nav,
+input {
+  display: flex;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+}
+.nav {
+  cursor: default;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 600;
+  background: #00d6b4;
+}
+
+/* menu list */
+.nav > li {
+ display: flex;
+}
+
+/* menu links */
+.nav > li > a {
+  background: #00d6b4;
+  border-left: 1px solid #00d6b4;
+  border-right: 1px solid #00d6b4;
+  color: #fcfcfc;
+  display: block;
+  font-weight: bold;
+  line-height: 3.5;
+  padding: 0 1.25em;
+  position: relative;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
+  transition: all .3s ease;
+  z-index: 600;
+}
+.nav > li > a:focus,
+.nav > li:hover > a {
+  background: #00d6b4;
+}
+.nav > li:first-child > a {
+  border-left: none;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+/* menu dropdown */
+.mega-menu {
+  display: flex;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0 0 3px 3px;
+  opacity: 0;
+  position: absolute;
+  transition: all .3s ease .15s;
+  visibility: hidden;
+  width: 100%;
+}
+li:hover > .mega-menu {
+  opacity: 1;
+  overflow: visible;
+  visibility: visible;
+}
+
+/* menu content */
+.nav-column {
+  flex-direction: column;
+  padding: 2.5%;
+  padding-top: 4%;
+  width: 20%;
+}
+.nav-column a {
+  color: #888;
+  display: block;
+  font-weight: bold;
+  line-height: 1.75;
+}
+.nav-column a:hover {
+  color: #00d6b4;
+}
+h3 {
+  color: #372f2b;
+  font-size: .95em;
+  font-weight: bold;
+  line-height: 1.15;
+  margin: 1.25em 0 .75em;
+  text-transform: uppercase;
+}
+.highlight {
+  color: #00d6b4;
+}
+
+
+/*flex-cards*/
+
+.flex-wrapper {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+}		
+ 
+.flex-items-default {
+    width: 300px;
+    height: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+		
+ .flex-card {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 300px;
+  margin: 10px;
+  color: #00d6b4;
+  flex-grow: -1;
+  flex-shrink: 2;
+  height: 350px;
+}
+
+.card-item a {
+  text-decoration: none;
+  color: #00d6b4;
+}
+.card-item li {
+  list-style: none;
+}
+
+a:hover {
+  color:black;
+}
+
+.card-item-article {
+  display: flex; 
+  flex-direction: column; 
+  flex: 1 0 auto; 
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+}
+
+.card-item-header,
+.card-item-body,
+.card-item-footer {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card-item-header,
+.card-item-footer {
+  font-size: 80%;
+}
+
+.card-item-header {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.card-item-category {
+  font-weight: bold;
+}
+
+.card-item-likes {
+  margin-left: auto; 
+}
+
+.card-item-body {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content:  center;
+}
+
+.card-item-content {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.card-item-footer {
+  padding-top: 2px;
+  padding-bottom: 5px;
+  margin-top: auto;
+  white-space: nowrap;
+  border-top: 2px solid;
+}
+
+
+/*footer*/
+
+.footer {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  /*bottom: 0;*/
+  left: 0;
+  padding: 1rem;
+  background: #00d6b4;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  color: #999;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #00d6b4;
+}
+
+ .flex-card2 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.card-item2 {
+  display: flex;
+  margin: 10px;
+  color: #999;
+  height: 100px;
+  justify-content: center;
+}
+
+.card-item2 a {
+  text-decoration: none;
+  color: #00d6b4;
+}
+.card-item2 li {
+  list-style: none;
+}
+
+.card-item2 p {
+  display: flex;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: auto;
+  color: #00d6b4;
+  font-size: 19px;
+  line-height: 22px;
+}

@@ -1,0 +1,45 @@
+/// @author Malena Brinkheden
+/// Font icons
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+/// Text setup
+$text: (
+  body: unquote("'gill sans', sans-serif"),
+) !default;
+
+
+/// COLORS map
+$color: (
+  main: #00d6b4,
+  light: #fcfcfc,
+  grey: #888,
+  dark: black,
+  lightgrey: #999,
+) !default;
+
+
+/// Color def map for page-layout using color map
+$color-defs: (
+  nav: map-get($color, main),
+  nav-text:map-get($color, light),
+  nav-header1: map-get($color, dark),
+  nav-header2: map-get($color, main),
+  header: map-get($color, main),
+  header-text: map-get($color, main),
+  footer-background: map-get($color, main),
+  footer-text: map-get($color, main),
+  text: map-get($color, main),
+  footer-link: map-get($color, lightgrey),
+) !default;
+
+
+/// Breakpoint map
+
+$breakpoints: (
+  'small':  ( min-width:  40.000em ),
+  'medium': ( min-width:  48.000em ),
+  'large':  ( min-width: 62.000em ),
+  'wide':  ( min-width: 75.000em )
+) !default;
+
+

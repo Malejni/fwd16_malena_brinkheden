@@ -1,0 +1,26 @@
+
+//Modern border-box applied everywhere.
+html {
+  box-sizing: border-box;
+}
+
+// inherit box-sizing
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// set upp body color
+body{
+  color: map-get($color);
+  background: map-get($color, bright);
+}
+
+//other body settings
+body {
+  margin: 0;
+  padding: 0;
+}
+
+

@@ -1,0 +1,8 @@
+//Placeholders and classes: ;
+
+///Flexcard placeholder
+%flexcard {
+	.card-item:nt-child(5){
+		flex-grow: 3;
+	}
+}

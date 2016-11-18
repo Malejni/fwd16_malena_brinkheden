@@ -1,0 +1,63 @@
+/*footer*/
+
+.footer {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  /*bottom: 0;*/
+  left: 0;
+  padding: 1rem;
+  background: map-get($color, main);
+}
+
+  .footer-link {
+    display: flex;
+    justify-content: center;
+    color: map-get($color, lightgrey);
+    text-decoration: none;
+  }
+
+    .footer-link:hover {
+      color: map-get($color, main);
+    }
+
+      .flex-card2 {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-flow: row wrap;
+          list-style: none;
+          justify-content: center;
+      }
+
+          .card-item2 {
+            display: flex;
+            margin: 10px;
+            color: map-get($color, grey);
+            height: 100px;
+            justify-content: center;
+          }
+
+            .card-item2 a {
+              text-decoration: none;
+              color: map-get($color, main);
+            }
+              .card-item2 li {
+                list-style: none;
+              }
+
+                .card-item2 p {
+                  display: flex;
+                }
+
+                  .footer-logo {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                    margin-top: auto;
+                    color: map-get($color, main);
+                    font-size: 19px;
+                    line-height: 22px;
+                  }
