@@ -1,0 +1,69 @@
+nav {
+  display: flex;
+  flex-direction: row wrap;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  background: #916c55;
+  background-image:url(../images/binding-dark.png);
+}
+
+#hamburger {
+  display: block;
+  padding: 0 20px;
+
+}
+
+#drop, #drop-1, #drop-2, #drop-3 {
+  display: none;
+}
+
+
+nav:after {
+  content: "";
+  display: table;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  margin: 0px;
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 0 20px;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+nav ul li ul li:hover { background: #000000; }
+
+nav a:hover { background-color: #000000; }
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+}
+
+nav ul li:hover > ul { display: inherit; }
+
+nav ul ul li {
+  width: 170px;
+  display: list-item;
+  position: relative;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 170px;
+}

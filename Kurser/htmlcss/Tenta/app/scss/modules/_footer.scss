@@ -1,0 +1,70 @@
+/*footer*/
+
+.footer {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  ///height:200px;
+  left: 0;
+  padding: 1rem;
+  background: #916c55;
+  background-image:url(../images/binding-dark.png);
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #916c55;
+}
+
+ .flex-card2 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.card-item2 {
+  display: flex;
+  margin: 10px;
+  color: white;
+  justify-content: center;
+}
+
+.card-item2 a {
+  text-decoration: none;
+  color: white;
+}
+.card-item2 li {
+  list-style: none;
+}
+
+.card-item2 p {
+  display: flex;
+  flex-flow:row!important;
+}
+
+.card-item-content2 {
+  margin: 0;
+  padding: 0;
+  color:white;
+    img {
+        width:100%;
+    }
+}
+
+.footer-logo {
+  display: flex;
+  justify-content:space around;
+  justify-content: center;
+  margin: auto;
+}

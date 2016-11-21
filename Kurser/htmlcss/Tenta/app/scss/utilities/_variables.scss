@@ -1,0 +1,24 @@
+/// @author Malena Brinkheden
+/// Font icons
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+/// COLORS map
+$color: (
+  main: #916c55,
+  accent1: darkorange,
+  accent2: red,
+  accent3: white,
+  accent4: blue,
+) !default;
+
+
+/// Breakpoint map
+
+$breakpoints: (
+  'small':  ( min-width:  40.000em ),
+  'medium': ( min-width:  48.000em ),
+  'large':  ( min-width: 62.000em ),
+  'wide':  ( min-width: 75.000em )
+) !default;
+
+

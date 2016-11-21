@@ -1,0 +1,31 @@
+
+//Modern border-box applied everywhere.
+html {
+  box-sizing: border-box;
+}
+
+// inherit box-sizing
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// set upp body
+body{
+  background: url(../images/South-Africa-Safari.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat:no repeat;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*sätt margins och paddings till 0, text-decoration och list-style till none för HELA SIDAN*/
+html, header, footer, body, nav, div, img, a, ul, li, h1, h2 {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+

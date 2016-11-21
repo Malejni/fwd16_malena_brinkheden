@@ -1,0 +1,52 @@
+///Mixin using breakpoint map 
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+ 
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+///Mixin for landing-page background
+/// @param {url} $imagepath - set the url of the page-bg
+/*  
+@mixin cover-background ()
+Creates a full width background image on an element. 
+
+-Parameters:
+--Required:
+$img-uri: URI of image you want to use as the background 
+
+--Optional:
+$background-top:  Defaults to "center - sets the "top" value of the background position
+$background-left: Defaults to "center - sets the "left" value of the background position.
+$background-attachment: Defaults to "fixed" - allows you to specify background attachment.
+
+*/
+
+
+///Mixin for page background
+/// @param {url} $imagepath - set the url of the page-bg
+@mixin page-bg($imagepath:url(../images/south-africa-safari.jpg),$bgrepeat:no-repeat,$bgattachment:fixed,$bgsize:cover) {
+        background-image: $imagepath;
+        background-repeat: $bgrepeat;
+		background-attachment:$bgattachment;
+		background-size:$bgsize;
+}  
+
+$imagedir:'../images/'; // define the base path before the mixin
+
+@mixin cover-background($filename,$position:fixed,$background-size: cover, $repeat: no-repeat) {
+    background: transparent url(#{$imagedir}#{$filename}) $repeat $position;
+}
+.testing3 {
+    @include cover-background('south-africa-safari.jpg');
+}
