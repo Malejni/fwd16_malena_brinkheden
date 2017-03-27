@@ -1,0 +1,1 @@
+SELECT firstname, lastname FROM `crew` where salary > 20000; 

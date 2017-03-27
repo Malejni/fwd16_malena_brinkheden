@@ -1,0 +1,1 @@
+SELECT count(1) as dead FROM `crew` where alive = false;
