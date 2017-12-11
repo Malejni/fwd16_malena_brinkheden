@@ -64,7 +64,7 @@ if(isset($_POST['Submit'])) {
 		// if all the fields are filled (not empty) 
 			
 		//insert data to database	
-		$result = mysqli_query($mysqli, "INSERT INTO products(title, ingress, content, tags,
+		$result = mysqli_query($mysqli, "INSERT INTO posts(title, ingress, content, tags,
 		published, author, status, login_id) VALUES('$title','$ingress','$content',
 		'$tags', '$published', '$author', '$status', '$loginId')");
 		
