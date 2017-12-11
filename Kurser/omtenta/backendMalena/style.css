@@ -4,20 +4,24 @@ body {
 	margin: auto;
 	height: 500px;
 	padding: 20px;
+	color: black;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #header {
 	width: 700px;
-	color: maroon;
+	color:pink;
 	font-size: 32px;
 	padding: 10px 10px 10px 0px;
 	margin-bottom: 15px;
-	border-bottom: 1px solid green;
+	border-bottom: 1px solid grey;
 }
 
 #footer {
-	border-top: 1px solid green;
+	width: 700px;
+	border-top: 1px solid grey;
 	margin-top: 20px;
-	color: #336699;
+	color: black;
+	font-size: 10px;
 	padding-top: 10px;	
 }

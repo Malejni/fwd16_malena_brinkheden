@@ -15,9 +15,9 @@
 		$result = mysqli_query($mysqli, "SELECT * FROM login");
 	?>
 				
-		Welcome <?php echo $_SESSION['name'] ?> ! <a href='logout.php'>Logout</a><br/>
+		Welcome <?php echo $_SESSION['name'] ?>! <a href='logout.php'>Logout</a><br/>
 		<br/>
-		<a href='view.php'>View and Add Posts</a>
+		<a href='view.php'>View and Add Blog Posts</a>
 		<br/><br/>
 	<?php	
 	} else {
