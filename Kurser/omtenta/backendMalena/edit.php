@@ -7,7 +7,6 @@ if(!isset($_SESSION['valid'])) {
 ?>
 
 <?php
-// including the database connection file
 include_once("connection.php");
 
 if(isset($_POST['update']))
@@ -57,8 +56,11 @@ if(isset($_POST['update']))
 		$result = mysqli_query($mysqli, "UPDATE posts SET title='$title', ingress='$ingress', content='$content',
 		tags='$tags', published='$published', author='$author', status='$status' WHERE id=$id");
 		
-		//redirectig to the display page. In our case, it is view.php
-		header("Location: view.php");
+		//redirectig to the display page.
+			if(!isset($_SESSION['valid'])) {
+				header("Location: view.php");
+			}
+		}
 	}
 }
 ?>

@@ -8,11 +8,6 @@ $conn = mysql_connect("localhost","root","root")
 @mysql_select_db("backendMalena",$conn);
 */
 
-/**
- * mysql_connect is deprecated
- * using mysqli_connect instead
- */
-
 $databaseHost = 'localhost';
 $databaseName = 'backendMalena';
 $databaseUsername = 'root';
